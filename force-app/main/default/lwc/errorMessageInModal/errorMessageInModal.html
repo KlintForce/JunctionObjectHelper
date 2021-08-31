@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-align_absolute-center" style="height: 300px;">
+        <ul>
+            <li>
+                <div class="slds-m-top_medium slds-notify slds-notify_alert slds-alert_error">
+                    <span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small">
+                        <lightning-icon class="slds-icon_container slds-icon-utility-error" icon-name="utility:warning"
+                            size="x-small" variant="inverse" alternative-text="warning" title="warning">
+                        </lightning-icon>
+                    </span>
+                    <h2>
+                        <p>
+                            <b>{errorMessage}</b>
+                        </p>
+                    </h2>
+                </div>
+            </li>
+            <slot></slot>
+        </ul>
+    </div>
+</template>

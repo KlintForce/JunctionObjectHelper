@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label>Ajouter des {RelatedMaster}</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_AddRelatedMaster</name>
+    </customLabels>
+    <customLabels>
+        <label>Précédent</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_Back</name>
+    </customLabels>
+    <customLabels>
+        <label>Annuler</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label>Fermer</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_Close</name>
+    </customLabels>
+    <customLabels>
+        <label>Une erreur liée à la configuration s&apos;est produite</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_ConfigError</name>
+    </customLabels>
+    <customLabels>
+        <label>Modifier les {RelatedMaster}</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_EditRelatedMaster</name>
+    </customLabels>
+    <customLabels>
+        <label>Modifier les {RelatedMaster} sélectionnés</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_EditSelectedRelatedMaster</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_LoadJunctionObjectDetailError --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_LoadJunctionObjectDetailError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_LoadJunctionObjectInfoError --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_LoadJunctionObjectInfoError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_LoadJunctionRecordsError --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_LoadJunctionRecordsError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_LoadRecordsError --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_LoadRecordsError</name>
+    </customLabels>
+    <customLabels>
+        <label>Suivant</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_Next</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_NoAccesToUpdateRecordsError --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_NoAccesToUpdateRecordsError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_NoAccessToUpdateRecordsError --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_NoAccessToUpdateRecordsError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_QueryRecordsError --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_QueryRecordsError</name>
+    </customLabels>
+    <customLabels>
+        <label>Enregistrer</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_SaveRecordsError --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_SaveRecordsError</name>
+    </customLabels>
+    <customLabels>
+        <label>Votre terme de recherche doit comporter 2 caractères ou plus</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_SearchMustHave2Chars</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_SearchRecordsError --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_SearchRecordsError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_SomethingWentWrong --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_SomethingWentWrong</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_SuccessfullyCreated --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_SuccessfullyCreated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- JunctionObjectHelper_JunctionRecordsModal_SuccessfullyUpdated --></label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_SuccessfullyUpdated</name>
+    </customLabels>
+    <customLabels>
+        <label>Voir tout</label>
+        <name>JunctionObjectHelper_JunctionRecordsModal_ViewAll</name>
+    </customLabels>
+</Translations>

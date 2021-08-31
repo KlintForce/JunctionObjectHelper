@@ -1,0 +1,12 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+    <div class="data-region slds-is-relative slds-p-right_small slds-p-left_small" style="height: 400px;">
+        <c-edit-form-datatable style="height: 300px;" key-field="Id" data={records} columns={columns}
+            hide-checkbox-column suppress-bottom-bar show-row-number-column
+            enable-infinite-loading={enableInfiniteLoading} onloadmore={handleLoadMore}
+            oninputfieldchange={handleInputFieldChange} onrowaction={handleRowAction} errors={errors}>
+        </c-edit-form-datatable>
+    </div>
+</template>

@@ -1,0 +1,118 @@
+<template>
+    <div class="slds-page-header slds-m-bottom_medium">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <span class="slds-icon_container slds-icon-utility-setup" title="Setup">
+                            <svg class="slds-icon slds-icon-text-default slds-icon_small" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#setup"></use>
+                            </svg>
+                            <span class="slds-assistive-text">Junction Helper Object Setup</span>
+                        </span>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span class="slds-page-header__title slds-hyphenate"
+                                        title="Junction Object Helper Setup">Junction Object Helper</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <article class="slds-card">
+        <div class="topBanner slds-card__body slds-card__body_inner slds-grid slds-gutters">
+            <div class="slds-col slds-size_3-of-4 bannerSection">
+                <h2 class="slds-text-heading_small">Welcome to the Junction Object Helper setup</h2>
+                <div class="slds-m-vertical_medium">
+                    <p class="slds-text-body_regular">Once the list of junction objects and related masters is loaded,
+                        click on the object that you want to configure</p>
+                    <p class="slds-text-body_regular">The setup assistant will guide you step by step on how to create
+                        the list buttons and add them to the page layouts</p>
+                    <p class="slds-text-body_regular">Start by configuring the junction object first then move to the
+                        configuration of the related masters</p>
+                    <p class="slds-text-body_regular">If you need more help please refer to the : <a
+                            href="https://bit.ly/JunctionObjectHelperGuide"> Junction
+                            Object Helper User
+                            Guide 📖</a>
+                    </p>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-4 bannerSection bannerImage slds-align-middle">
+                <span class="slds-float_right">
+                    <img style="height: 120px;" src={setupImageURL} alt="">
+                </span>
+            </div>
+        </div>
+    </article>
+    <article class="slds-card slds-m-top_small">
+        <div class="slds-is-relative " style="height: 400px;">
+            <template if:true={noSetup}>
+                <template if:true={isLoading}>
+                    <div role="status" class="slds-spinner slds-spinner_medium">
+                        <span class="slds-assistive-text">Loading</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                        <div class="custom-loading-text">
+                            <p>
+                                Detecting junction objects 🔍
+                            </p>
+                            <p>Please wait...⏳</p>
+                        </div>
+                    </div>
+                </template>
+                <template if:false={isLoading}>
+                    <template if:true={data.length}>
+                        <div class="slds-m-around_small slds-text-heading_medium">
+                            List of junction objects with related masters
+                        </div>
+                        <lightning-datatable key-field="id" data={data} columns={columns} hide-checkbox-column
+                            onrowaction={handleRowAction}>
+                        </lightning-datatable>
+                    </template>
+                    <template if:false={data.length}>
+                        <div class="slds-align_absolute-center" style="height: 400px;">
+                            <div class="slds-illustration slds-illustration_small" aria-hidden="true">
+                                <img src="/img/chatter/OpenRoad.svg" class="slds-illustration__svg" alt="" />
+                                <div class="slds-text-color_weak">
+                                    <h3 class="slds-text-heading_medium">No junction object found</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+            </template>
+            <template if:true={setupJunctionObject}>
+                <article class="slds-card slds-border_bottom slds-m-around_small">
+                    <lightning-button variant="brand-outline" label="Back" title="Go back" icon-name="utility:back"
+                        onclick={handleBack} class="slds-m-left_x-small"></lightning-button>
+                </article>
+                <c-junction-object-setup junction-object-detail={selectedJunctionObjectDetail}>
+                </c-junction-object-setup>
+            </template>
+            <template if:true={setupMaster1}>
+                <article class="slds-card slds-border_bottom slds-m-around_small">
+                    <lightning-button variant="brand-outline" label="Back" title="Go back" icon-name="utility:back"
+                        onclick={handleBack} class="slds-m-left_x-small"></lightning-button>
+                </article>
+                <c-master-object-setup junction-object-detail={selectedJunctionObjectDetail} main-master="master1"
+                    related-master="master2">
+                </c-master-object-setup>
+            </template>
+            <template if:true={setupMaster2}>
+                <article class="slds-card slds-border_bottom slds-m-around_small">
+                    <lightning-button variant="brand-outline" label="Back" title="Go back" icon-name="utility:back"
+                        onclick={handleBack} class="slds-m-left_x-small"></lightning-button>
+                </article>
+                <c-master-object-setup junction-object-detail={selectedJunctionObjectDetail} main-master="master2"
+                    related-master="master1">
+                </c-master-object-setup>
+            </template>
+        </div>
+    </article>
+</template>

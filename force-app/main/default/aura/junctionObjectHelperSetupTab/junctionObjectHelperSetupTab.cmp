@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable">
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <lightning:workspaceAPI aura:id="workspace" />
+
+  <c:junctionObjectHelperSetup></c:junctionObjectHelperSetup>
+</aura:component>

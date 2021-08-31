@@ -1,0 +1,109 @@
+<template>
+    <section class="slds-card">
+        <ol class="slds-setup-assistant">
+            <li class="slds-setup-assistant__item">
+                <article class="slds-setup-assistant__step">
+                    <div class="slds-summary-detail slds-is-open">
+                        <div class="slds-container_fluid">
+                            <div class="slds-summary-detail__title">
+                                <div class="slds-setup-assistant__step-summary">
+                                    <div class="slds-media">
+                                        <div class="slds-media__figure">
+                                            <div
+                                                class="slds-progress-ring slds-progress-ring_active-step slds-progress-ring_large">
+                                                <div class="slds-progress-ring__progress" role="progressbar">
+                                                </div>
+                                                <div class="slds-progress-ring__content">{step}</div>
+                                            </div>
+                                        </div>
+                                        <div class="slds-media__body slds-m-top_x-small">
+                                            <div class="slds-media">
+                                                <div
+                                                    class="slds-setup-assistant__step-summary-content slds-media__body">
+                                                    <h3
+                                                        class="slds-setup-assistant__step-summary-title slds-text-heading_small">
+                                                        <div class="slds-button slds-button_reset">
+                                                            Create '{capitalizedVerbe}
+                                                            {relatedMasterLabelPlural}' button
+                                                        </div>
+                                                    </h3>
+                                                    <p>The "{capitalizedVerbe}
+                                                        {relatedMasterLabelPlural}" button will help you to {verbe} multiple <i>{mainMasterLabel}</i> records from the <i>{junctionObjectDetail.labelPlural}</i> related list on the <i>{mainMasterLabel}</i> object
+                                                    </p>
+                                                </div>
+                                                <div class="slds-media__figure slds-media__figure_reverse">
+                                                    <p class="slds-text-align_right slds-text-color_weak">
+                                                        1 min
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div aria-hidden="true" class="slds-summary-detail__content">
+                                <div class="slds-setup-assistant__step-detail">
+                                    <div class="slds-progress slds-progress_vertical slds-progress_success">
+                                        <ol class="slds-progress__list slds-progress__list-bordered">
+                                            <li class="slds-progress__item">
+                                                <div class="slds-progress__marker">
+                                                </div>
+                                                <div
+                                                    class="slds-progress__item_content slds-grid slds-grid_align-spread">
+                                                    <div class="slds-size_10-of-12">
+                                                        <p>
+                                                            Go to the Object Manager → <b>{junctionObjectDetail.label}</b>
+                                                        </p>
+                                                    </div>
+                                                    <div class="slds-grid slds-grid_align-end slds-size_2-of-12">
+                                                        <a href={junctionObjectButtonsLinksActionsLink}
+                                                            target=" _blank" data-id="go-to-setup-link">Go to Setup</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="slds-progress__item">
+                                                <div class="slds-progress__marker">
+                                                </div>
+                                                <div
+                                                    class="slds-progress__item_content slds-grid slds-grid_align-spread">
+                                                    <div class="slds-size_10-of-12">
+                                                        <p>
+                                                            Create a new button <code>{capitalizedVerbe} {relatedMasterLabelPlural}</code> of type <i> List button </i>
+                                                        </p>
+                                                    </div>
+                                                    <div class="slds-grid slds-grid_align-end slds-size_2-of-12">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="slds-progress__item">
+                                                <div class="slds-progress__marker"></div>
+                                                <div
+                                                    class="slds-progress__item_content slds-grid slds-grid_align-spread">
+                                                    <div class="slds-size_10-of-12">
+                                                        <p>
+                                                            Copy the code below to the <i>List Button</i> definition :
+                                                        </p>
+                                                        <p>
+                                                            <code>{buttonLink}</code>
+                                                        </p>
+                                                    </div>
+                                                    <div class="slds-grid slds-grid_align-end slds-size_2-of-12">
+                                                        <lightning-button data-id="copy-button" variant="brand-outline" 
+                                                            label="Copy"
+                                                            title="Copy Link" icon-name="utility:copy_to_clipboard"
+                                                            onclick={handleCopy}>
+                                                        </lightning-button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </li>
+        </ol>
+    </section>
+</template>

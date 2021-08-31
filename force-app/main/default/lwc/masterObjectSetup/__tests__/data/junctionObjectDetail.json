@@ -1,0 +1,28 @@
+{
+  "durableId": "01I3N000000H2Tf",
+  "label": "AccountContact",
+  "labelPlural": "AccountContacts",
+  "master1": {
+    "durableId": "Account",
+    "fieldLabel": "Account",
+    "fieldName": "efrontforce__Account__c",
+    "label": "Account",
+    "labelPlural": "Accounts",
+    "name": "Account",
+    "nameField": "Name",
+    "nameFieldLabel": "Account Name",
+    "relationshipName": "efrontforce__Account__r"
+  },
+  "master2": {
+    "durableId": "Contact",
+    "fieldLabel": "Contact",
+    "fieldName": "efrontforce__Contact__c",
+    "label": "Contact",
+    "labelPlural": "Contacts",
+    "name": "Contact",
+    "nameField": "Name",
+    "nameFieldLabel": "Full Name",
+    "relationshipName": "efrontforce__Contact__r"
+  },
+  "name": "efrontforce__AccountContact__c"
+}

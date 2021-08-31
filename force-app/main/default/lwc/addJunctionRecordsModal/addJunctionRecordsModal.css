@@ -1,0 +1,9 @@
+.slds-modal__container {
+  width: 90%;
+  max-width: none;
+}
+
+.search-region {
+  background-color: var(--lwc-colorBackgroundAnchor, rgb(243, 242, 242));
+  border-bottom: 1px solid var(--lwc-colorBorder, rgb(221, 219, 218));
+}

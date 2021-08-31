@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_AddRelatedMaster</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_AddRelatedMaster</shortDescription>
+        <value>Add {RelatedMaster}</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_Back</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_Cancel</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_Close</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_ConfigError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_ConfigError</shortDescription>
+        <value>Configuration error occured</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_EditRelatedMaster</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_EditRelatedMaster</shortDescription>
+        <value>Edit {RelatedMaster}</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_EditSelectedRelatedMaster</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_EditSelectedRelatedMaster</shortDescription>
+        <value>Edit Selected {RelatedMaster}</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_LoadJunctionObjectDetailError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_LoadJunctionObjectDetailError</shortDescription>
+        <value>Server error occured while getting the junction object details</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_LoadJunctionObjectInfoError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_LoadJunctionObjectInfoError</shortDescription>
+        <value>Sorry an error occured while loading the junction object infos</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_LoadJunctionRecordsError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_LoadJunctionRecordsError</shortDescription>
+        <value>Sorry an error occured while loading the junction object records</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_LoadRecordsError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_LoadRecordsError</shortDescription>
+        <value>Sorry an error occured while loading the records</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_Next</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_NoAccesToUpdateRecordsError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_NoAccesToUpdateRecordsError</shortDescription>
+        <value>Sorry you don&apos;t have the necessary access to update records</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_NoAccessToUpdateRecordsError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_NoAccessToUpdateRecordsError</shortDescription>
+        <value>Sorry you don&apos;t have the necessary access to update records</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_QueryRecordsError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_QueryRecordsError</shortDescription>
+        <value>Sorry an error occured while querying the records</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_Save</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_SaveRecordsError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_SaveRecordsError</shortDescription>
+        <value>Sorry an error occured while saving the records</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_SearchMustHave2Chars</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_SearchMustHave2Chars</shortDescription>
+        <value>Your search term must have 2 or more characters.</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_SearchRecordsError</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_SearchRecordsError</shortDescription>
+        <value>Sorry an error occured while searching the records</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_SomethingWentWrong</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_SomethingWentWrong</shortDescription>
+        <value>Something went wrong...</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_SuccessfullyCreated</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_SuccessfullyCreated</shortDescription>
+        <value>Records successfully created</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_SuccessfullyUpdated</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_SuccessfullyUpdated</shortDescription>
+        <value>Records successfully updated</value>
+    </labels>
+    <labels>
+        <fullName>JunctionObjectHelper_JunctionRecordsModal_ViewAll</fullName>
+        <categories>JunctionObjectHelper</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>JunctionObjectHelper_JunctionRecordsModal_ViewAll</shortDescription>
+        <value>View All</value>
+    </labels>
+</CustomLabels>

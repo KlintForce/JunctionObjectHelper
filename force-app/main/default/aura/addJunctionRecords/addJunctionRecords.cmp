@@ -1,0 +1,8 @@
+<aura:component implements="lightning:isUrlAddressable" access="global">
+  <aura:handler name="render" value="{!this}" action="{!c.onRender}" />
+  <c:redirectionService aura:id="redirectionService" />
+
+  <c:addJunctionRecordsModal aura:id="addJunctionRecordsModal" recordId="{!v.pageReference.state.c__recordId}"
+    junctionObjectName="{!v.pageReference.state.c__junctionObjectName}" onredirect="{!c.onRedirect}">
+  </c:addJunctionRecordsModal>
+</aura:component>

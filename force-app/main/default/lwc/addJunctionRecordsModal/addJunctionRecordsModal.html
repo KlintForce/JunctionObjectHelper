@@ -1,0 +1,116 @@
+<template>
+    <section role="dialog" tabindex="-1" data-id="modal" aria-modal="true" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header slds-is-relative" style="height: 80px;">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                    onclick={handleClose} title={labels.junctionRecordsModal_Close}>
+                    <lightning-icon icon-name="utility:close" alternative-text="Close"
+                        title={labels.junctionRecordsModal_Close}></lightning-icon>
+                    <span class="slds-assistive-text">{labels.junctionRecordsModal_Close}</span>
+                </button>
+                <template if:false={modalInfo.title}>
+                    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                </template>
+                <template if:true={modalInfo.title}>
+                    <h2 id="modal-heading-01" class="slds-modal__title">{modalInfo.title}</h2>
+                    <p class="slds-m-top_x-small">{modalInfo.subTitle}</p>
+                </template>
+            </header>
+            <div class="slds-modal__content slds-is-relative" style="min-height: 380px;">
+                <template if:true={configError}>
+                    <c-error-message-in-modal error-message={configError}>
+                        <li>
+                            <div class="slds-text-body_regular slds-text-align_center">Please make sure that you
+                                have properly created the list button and configured the access to the Junction object
+                                helper</div>
+                        </li>
+                        <li>
+                            <div class="slds-text-body_regular slds-text-align_center">For more details please refer
+                                to the <a href="/lightning/n/efrontforce__JunctionObjectHelperSetup">Junction Object
+                                    Helper setup</a></div>
+                        </li>
+                    </c-error-message-in-modal>
+                </template>
+                <template if:false={configError}>
+                    <template if:true={isStep1}>
+                        <template if:false={master2Columns}>
+                            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                        </template>
+                        <template if:false={loadingError}>
+                            <template if:true={master2Columns}>
+                                <div class="search-region slds-p-right_small slds-p-left_small slds-p-bottom_x-small">
+                                    <lightning-input onkeyup={handleSearch} name="enter-search" value={searchValue}
+                                        placeholder="Search Products" type="search">
+                                    </lightning-input>
+                                    <template if:false={isSearchTermValid}>
+                                        <p class="slds-m-top_x-small slds-text-color_error">
+                                            {labels.addJunctionRecordsModal_SearchMustHave2Chars}</p>
+                                    </template>
+                                    <template if:false={isSearchTermEmpty}>
+                                        <p class="slds-m-top_x-small"><a
+                                                onclick={handleViewAll}>{labels.addJunctionRecordsModal_ViewAll}</a></p>
+                                    </template>
+                                </div>
+                                <div class="data-region slds-is-relative slds-m-top_x-small slds-p-right_small slds-p-left_small"
+                                    style="height: 300px;">
+                                    <template if:true={isMaster2RecordsLoading}>
+                                        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                                    </template>
+                                    <template if:false={isMaster2RecordsLoading}>
+                                        <lightning-datatable key-field="Id" columns={master2Columns}
+                                            data={master2Records} selected-rows={master2SelectedIds}
+                                            enable-infinite-loading={master2RecordsInfiniteLoading}
+                                            onloadmore={loadMoreMaster2Records} onrowselection={handleRowSelection}>
+                                        </lightning-datatable>
+                                    </template>
+                                </div>
+                            </template>
+                        </template>
+                        <template if:true={loadingError}>
+                            <c-error-message-in-modal error-message={loadingError}></c-error-message-in-modal>
+                        </template>
+                    </template>
+                    <template if:true={isStep2}>
+                        <template if:true={loadingError}>
+                            <c-error-message-in-modal error-message={loadingError}></c-error-message-in-modal>
+                        </template>
+                        <template if:false={loadingError}>
+                            <c-list-junction-records junction-object-name={junctionObjectName}
+                                master2-name-field-label={junctionObjectDetail.master2.nameFieldLabel}
+                                junction-object-field-infos={junctionObjectFieldInfos}
+                                junction-object-records={junctionObjectSelectedRecords}
+                                display-errors={editDatatableDisplayErrors} oncellchange={handleCellChange}
+                                onrowaction={handleRowAction}>
+                            </c-list-junction-records>
+                        </template>
+                    </template>
+                </template>
+            </div>
+            <footer class="slds-modal__footer">
+                <template if:true={isStep2}>
+                    <button class="slds-button slds-button_neutral slds-float--left"
+                        onclick={handleBack}>{labels.junctionRecordsModal_Back}</button>
+                    <template if:true={editDatatableDisplayErrors}>
+                        <button class="slds-button slds-button_icon slds-button_icon-error"
+                            title="Can't save records with errors">
+                            <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#warning"></use>
+                            </svg>
+                        </button>
+                    </template>
+                </template>
+                <button class="slds-button slds-button_neutral"
+                    onclick={handleCancel}>{labels.junctionRecordsModal_Cancel}</button>
+                <template if:true={isStep1}>
+                    <button class="slds-button slds-button_brand" onclick={handleNext}
+                        disabled={isNextButtonDisabled}>{labels.junctionRecordsModal_Next}</button>
+                </template>
+                <template if:true={isStep2}>
+                    <button class="slds-button slds-button_brand" onclick={handleSave}
+                        disabled={isSaveButtonDisabled}>{labels.junctionRecordsModal_Save}</button>
+                </template>
+            </footer>
+        </div>
+    </section>
+    <div data-id="backdrop" class="slds-backdrop slds-backdrop_open"></div>
+</template>

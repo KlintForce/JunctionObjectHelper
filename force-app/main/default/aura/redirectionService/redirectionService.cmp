@@ -1,0 +1,6 @@
+<aura:component access="global">
+    <lightning:workspaceAPI aura:id="workspace" />
+	<aura:method access="global" name="redirect" action="{!c.redirectToSObject}" description="Redirect to sobject detail">
+        <aura:attribute type="String" name="recordId" required="true" description="Record Id"/>
+    </aura:method>
+</aura:component>

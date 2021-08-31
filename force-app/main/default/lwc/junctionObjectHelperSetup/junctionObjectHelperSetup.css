@@ -1,0 +1,8 @@
+.custom-loading-text {
+  text-align: center;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: -1.5rem;
+  left: -1rem;
+  white-space: nowrap;
+}
