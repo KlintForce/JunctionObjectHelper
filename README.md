@@ -1,18 +1,25 @@
-# Salesforce DX Project: Next Steps
+# Junction Object Helper
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+<p align="center"><img src="/force-app/main/default/staticresources/junctionObjectHelper/setup.png" width="300"/></p>
 
-## How Do You Plan to Deploy Your Changes?
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+*Junction Object Helper – Manage junction object records with ease*
 
-## Configure Your Salesforce DX Project
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+#### ADD MULTIPLE JUNCTION OBJECT RECORDS ➕
 
-## Read All About It
+Using the add list button you can create multiple junction object records at once
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+#### EDIT MULTIPLE JUNCTION OBJECT RECORDS 🖊️
+
+Using the edit list button you can edit multiple junction object records that relate to the master object
+
+#### DELETE MULTIPLE JUNCTION OBJECT RECORDS ➖
+
+Using the edit list button you can delete multiple junction object records with the bin action button displayed in the edit list
+
+#### Blog posts 📰 on Medium 
+
+* [Junction Object Helper, the new free App 📦 on the AppExchange 🛒 by eFrontech](https://medium.com/efrontforce/junction-object-helper-the-new-free-app-on-the-appexchange-by-efrontech-686e5f4ca0ac)
+* [Junction Object Helper, la nouvelle application 📦 AppExchange 🛒 gratuite d’eFrontech](https://medium.com/efrontforce/junction-object-helper-la-nouvelle-application-appexchange-gratuite-defrontech-70c4bba942a9)
+
