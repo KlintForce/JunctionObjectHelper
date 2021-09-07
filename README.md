@@ -5,6 +5,8 @@
 
 *Junction Object Helper – Manage junction object records with ease*
 
+Go get it now! it's free 🆓 on [AppExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000G11giUAB) 🛒
+
 
 #### ADD MULTIPLE JUNCTION OBJECT RECORDS ➕
 
