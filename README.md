@@ -7,16 +7,17 @@
 
 Go get it now! it's free 🆓 on [AppExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000G11giUAB) 🛒
 
+Junction Object Helper features 🌟: 
 
-#### ADD MULTIPLE JUNCTION OBJECT RECORDS ➕
+* ADD MULTIPLE JUNCTION OBJECT RECORDS ➕
 
 Using the add list button you can create multiple junction object records at once
 
-#### EDIT MULTIPLE JUNCTION OBJECT RECORDS 🖊️
+* EDIT MULTIPLE JUNCTION OBJECT RECORDS 🖊️
 
 Using the edit list button you can edit multiple junction object records that relate to the master object
 
-#### DELETE MULTIPLE JUNCTION OBJECT RECORDS ➖
+* DELETE MULTIPLE JUNCTION OBJECT RECORDS ➖
 
 Using the edit list button you can delete multiple junction object records with the bin action button displayed in the edit list
 
